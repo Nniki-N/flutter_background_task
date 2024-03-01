@@ -1,0 +1,28 @@
+name: background_task
+description: "Can be processed using location updates after the application transitions to the background."
+version: 0.1.1+1
+repository: https://github.com/never-inc/flutter_background_task
+homepage: https://github.com/never-inc/flutter_background_task
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  pedantic_mono:
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.neverjp.background_task
+        pluginClass: BackgroundTaskPlugin
+      ios:
+        pluginClass: BackgroundTaskPlugin
